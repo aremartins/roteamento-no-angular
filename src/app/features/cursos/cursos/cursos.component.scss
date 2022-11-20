@@ -1,0 +1,16 @@
+main{
+  padding:2rem;
+  display: flex;
+
+}
+
+ol{
+  min-width:400px;
+  max-width: 800px;
+}
+
+li{
+  padding: 1rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login/login.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainComponent } from './main/main.component';
+import { CourseDetailComponent } from './cursos/course-detail/course-detail.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -15,11 +17,13 @@ import { MainComponent } from './main/main.component';
     HomeComponent,
     LoginComponent,
     NavbarComponent,
-    MainComponent
+    MainComponent,
+    CourseDetailComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports:[
     MainComponent
