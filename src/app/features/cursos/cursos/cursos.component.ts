@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+
 import { Course } from '../models/course';
 import { CoursesService } from '../services/courses.service';
 
@@ -9,16 +10,17 @@ import { CoursesService } from '../services/courses.service';
   styleUrls: ['./cursos.component.scss'],
 })
 export class CursosComponent implements OnInit {
-  courses: Course[] = [];
+  courses!: Observable<Course[]>;
 
-  constructor(private coursesService: CoursesService, private route: ActivatedRoute) {}
+  constructor(
+    private coursesService: CoursesService,
+  ) {}
 
   ngOnInit(): void {
     this.getCourses();
   }
 
   getCourses(): void {
-    this.courses = this.coursesService.getCourses()
+    this.courses = this.coursesService.getCourses();
   }
-
 }
