@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './features/login/login/login.component';
 
 const routes: Routes = [
+  { path: 'cursos', loadChildren:() => import('./features/cursos/cursos.module').then(m => m.CursosModule) },
+  { path: 'alunos', loadChildren:() => import('./features/alunos/alunos.module').then(m => m.AlunosModule) },
   { path: 'notfound', component: NotFoundComponent},
   { path: 'login', component: LoginComponent},
   { path: '',  component: HomeComponent}

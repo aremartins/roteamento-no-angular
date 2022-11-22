@@ -1,4 +1,3 @@
-import { CursosModule } from './cursos/cursos.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home/home.component';
@@ -11,7 +10,7 @@ import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [HomeComponent, LoginComponent, NavbarComponent, MainComponent],
-  imports: [CommonModule, RouterModule, SharedModule, CursosModule, AlunosModule],
+  imports: [CommonModule, RouterModule, SharedModule],
   exports: [MainComponent],
 })
 export class FeaturesModule {}
