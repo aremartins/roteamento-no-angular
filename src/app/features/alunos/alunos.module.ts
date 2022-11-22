@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { AlunosComponent } from './alunos/alunos.component';
 import { DetalhesAlunoComponent } from './detalhes-aluno/detalhes-aluno.component';
 import { FormAlunoComponent } from './form-aluno/form-aluno.component';
+import { FormsModule } from '@angular/forms';
+import { BotaoComponent } from './componentes/botao/botao.component';
 
 
 
@@ -11,10 +13,12 @@ import { FormAlunoComponent } from './form-aluno/form-aluno.component';
   declarations: [
     AlunosComponent,
     DetalhesAlunoComponent,
-    FormAlunoComponent
+    FormAlunoComponent,
+    BotaoComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     AlunosRoutes
   ]
 })

@@ -1,4 +1,10 @@
-ul{
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+  ul{
   min-width: 400px;
   max-width: 800px;
 }

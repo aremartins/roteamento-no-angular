@@ -1,1 +1,15 @@
-<p>form-aluno works!</p>
+<section class="edicao" aria-label="formulario de edição">
+  <h2>Edite as informações necessárias</h2>
+  <form *ngIf="aluno">
+    <div class="input-area">
+      <label for="name">Nome</label>
+      <input type="text" [(ngModel)]="aluno.nome" name="aluno">
+    </div>
+    <div class="input-area">
+      <label for="name">Email</label>
+      <input type="text" [(ngModel)]="aluno.email" name="email">
+    </div>
+    <div class="input-area"><app-botao [action]="'Voltar'" (enviar)="goBack()"></app-botao></div>
+  </form>
+
+</section>

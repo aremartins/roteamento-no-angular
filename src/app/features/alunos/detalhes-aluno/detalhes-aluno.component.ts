@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Aluno } from '../model/aluno';
 import { AlunoService } from './../service/aluno.service';
@@ -14,7 +14,7 @@ export class DetalhesAlunoComponent implements OnInit {
   id!: number
   aluno? : Aluno
 
-  constructor(private route : ActivatedRoute, private alunoService: AlunoService) { }
+  constructor(private route : ActivatedRoute, private alunoService: AlunoService, private router: Router) { }
 
   ngOnInit(): void {
     this.getAluno()
@@ -27,7 +27,14 @@ export class DetalhesAlunoComponent implements OnInit {
         aluno => this.aluno = aluno as Aluno
       )
     })
+    if(this.aluno === null){
+      this.router.navigate(['/notfound'])
+    }
+  }
 
+  editar(){
+    this.router.navigate(['alunos', this.aluno?.id, 'editar'])
+    console.log('funciona')
   }
 
 }

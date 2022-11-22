@@ -1,8 +1,8 @@
-<main>
+<main class="container">
   <ul>
     <li *ngFor="let aluno of alunos | async">
-      <a [routerLink]="['/alunos', aluno.id]"> {{ aluno.nome }}</a>
+      <a [routerLink]="[aluno.id]"> {{ aluno.nome }}</a>
     </li>
   </ul>
+  <div><router-outlet></router-outlet></div>
 </main>
-<router-outlet></router-outlet>
