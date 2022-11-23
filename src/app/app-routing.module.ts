@@ -2,7 +2,7 @@ import { NotFoundComponent } from './shared/pages/not-found/not-found.component'
 import { HomeComponent } from './features/home/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './features/login/login/login.component';
+import { LoginComponent } from './core/login/login.component';
 
 const routes: Routes = [
   { path: 'cursos', loadChildren:() => import('./features/cursos/cursos.module').then(m => m.CursosModule) },

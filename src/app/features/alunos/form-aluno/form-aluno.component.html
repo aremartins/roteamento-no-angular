@@ -9,7 +9,9 @@
       <label for="name">Email</label>
       <input type="text" [(ngModel)]="aluno.email" name="email">
     </div>
-    <div class="input-area"><app-botao [action]="'Voltar'" (enviar)="goBack()"></app-botao></div>
+    <div class="input-area">
+      <app-botao [action]="'Voltar'" (enviar)="goBack()"></app-botao>
+    </div>
   </form>
 
 </section>

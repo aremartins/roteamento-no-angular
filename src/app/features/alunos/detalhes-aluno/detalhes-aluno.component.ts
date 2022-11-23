@@ -37,4 +37,8 @@ export class DetalhesAlunoComponent implements OnInit {
     console.log('funciona')
   }
 
+  salvar(): void {
+
+  }
+
 }

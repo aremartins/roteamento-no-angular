@@ -28,4 +28,6 @@ export class FormAlunoComponent implements OnInit {
   goBack(){
     window.history.back()
   }
+
+
 }
