@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { FormsModule } from '@angular/forms';
 import { FeaturesModule } from './features/features.module';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CursosModule } from './features/cursos/cursos.module';
 import { AlunosModule } from './features/alunos/alunos.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { AlunosModule } from './features/alunos/alunos.module';
     FeaturesModule,
     CursosModule,
     AlunosModule,
+    SharedModule,
+    CoreModule,
     FormsModule,
     HttpClientModule
   ],

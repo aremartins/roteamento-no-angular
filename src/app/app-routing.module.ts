@@ -8,8 +8,10 @@ const routes: Routes = [
   { path: 'cursos', loadChildren:() => import('./features/cursos/cursos.module').then(m => m.CursosModule) },
   { path: 'alunos', loadChildren:() => import('./features/alunos/alunos.module').then(m => m.AlunosModule) },
   { path: 'notfound', component: NotFoundComponent},
+  { path: '',  component: HomeComponent},
   { path: 'login', component: LoginComponent},
-  { path: '',  component: HomeComponent}
+
+
 ];
 
 @NgModule({

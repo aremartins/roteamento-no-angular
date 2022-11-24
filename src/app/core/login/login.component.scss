@@ -1,0 +1,33 @@
+.container-login {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 5px;
+  align-items: center;
+}
+
+label,
+input {
+  font-size: 1.8rem;
+}
+
+.container-btn{
+  display:flex;
+  justify-content:center;
+}

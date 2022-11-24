@@ -1,1 +1,15 @@
-<p>login works!</p>
+<section class="container-login">
+  <div class="login-content">
+    <div class="inputs">
+      <label for="user">Usuário</label>
+      <input type="text" [(ngModel)]="user.usuario" name="user" />
+    </div>
+    <div class="inputs">
+      <label for="password">Senha</label>
+      <input type="password" [(ngModel)]="user.senha" name="password" />
+    </div>
+    <div class="container-btn">
+      <app-button [action]="'Enviar'" (enviar)="fazerLogin()"></app-button>
+    </div>
+  </div>
+</section>

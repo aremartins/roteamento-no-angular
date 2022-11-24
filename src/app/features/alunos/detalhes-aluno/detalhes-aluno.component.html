@@ -1,7 +1,8 @@
 <div *ngIf="aluno">
   <h2>Detalhes do Aluno</h2>
   <p>Nome: {{ aluno.nome }}</p>
-  <p>Email: {{aluno.email}}</p>
-  <!-- <button class="btn" (click)="editar()">Editar</button> -->
-  <app-botao [action]="'Editar'" (enviar)="editar()"></app-botao>
+  <p>Email: {{ aluno.email }}</p>
+  <div class="button-container">
+    <app-button [action]="'Editar'" (enviar)="editar()"></app-button>
+  </div>
 </div>

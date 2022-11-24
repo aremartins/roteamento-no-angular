@@ -8,7 +8,8 @@ describe('LoginComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
+      declarations: [ LoginComponent ],
+      imports:['CUSTOM_ELEMENTS_SCHEMA'],
     })
     .compileComponents();
 
