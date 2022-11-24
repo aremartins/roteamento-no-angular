@@ -27,4 +27,8 @@ export class AuthService {
       this.router.navigate(['/login'])
     }
   }
+
+  usuarioAutenticado(): boolean {
+    return this.userAuth
+  }
 }
