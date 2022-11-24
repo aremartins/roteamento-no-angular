@@ -1,5 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { User } from '../../models/user';
 
 @Injectable({
@@ -23,6 +24,7 @@ export class AuthService {
       this.router.navigate(['/'])
     } else {
       this.userAuth = false
+      alert('Usuário ou senha inválidos')
       this.showMenuEmitter.emit(false)
       this.router.navigate(['/login'])
     }

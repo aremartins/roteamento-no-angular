@@ -1,9 +1,10 @@
-import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
-import { HomeComponent } from './features/home/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './core/login/login.component';
+
 import { AuthGuard } from './core/guards/auth-guard.service';
+import { LoginComponent } from './core/login/login.component';
+import { HomeComponent } from './features/home/home/home.component';
+import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 
 const routes: Routes = [
   {

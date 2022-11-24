@@ -1,7 +1,8 @@
-import { AlunoService } from './../service/aluno.service';
 import { Component, OnInit } from '@angular/core';
-import { Aluno } from '../model/aluno';
 import { Observable } from 'rxjs';
+
+import { Aluno } from '../model/aluno';
+import { AlunoService } from './../service/aluno.service';
 
 @Component({
   selector: 'app-alunos',
